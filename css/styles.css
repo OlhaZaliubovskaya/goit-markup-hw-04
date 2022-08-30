@@ -9,6 +9,8 @@
   --text-accent: #2196f3;
   --bleack-fon: #2f303a;
   --icon-color: #afb1b8;
+  --border-color: #F5F4FA;
+
   /* gap */
   --cadr-gap: 30px;
   --card-item: 4;
@@ -124,6 +126,14 @@ img {
   color: var(--text-color);
 }
 
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  }
 /* студія , контакти , портфоліо */
 
 .nav {
@@ -212,6 +222,8 @@ img {
   gap: 8px;
 }
 
+.contacts-link:hover,
+.contacts-link:focus,
 .nav-link:hover,
 .nav-link:focus,
 .address-link:focus,
@@ -219,6 +231,10 @@ img {
 .contakt-link:focus,
 .contakt-link:hover {
   color: var(--text-accent);
+}
+.contacts-link {
+  display: flex;
+  align-items: center;
 }
 
 .hero {
@@ -305,8 +321,22 @@ img {
 }
 
 .team {
-  background: #f5f4fa;
+  background: var(--border-color);
 }
+/* контейнір з картинками  */
+
+.description-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+}
+
+
 
 /* співробітники */
 
@@ -328,11 +358,12 @@ img {
   justify-content: center;
   column-gap: 10px;
 }
-.social-list-link {
+.social-list-link,
+.footer-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -391,6 +422,7 @@ padding-bottom: 30px;
   color: var(--text-accent);
 }
 
+
 /* підвал сторінки */
 .footer {
   background: var(--bleack-fon);
@@ -433,6 +465,15 @@ padding-bottom: 30px;
   color: var(--text-secondary);
 }
 
+
+.footer-icon {
+fill: var(--text-secondary);
+}
+.footer-contact .social-list-link
+ {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* Друга сторінка */
 
 /* кнопки */
@@ -440,7 +481,13 @@ padding-bottom: 30px;
 .filter-btn:focus {
   background: var(--text-accent);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.portfolio-item:hover,
+.portfolio-item:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 /*портфоліо*/
 .portfolio-list {
